@@ -4,9 +4,7 @@ namespace Editmode\WeightConversions;
 
 class Weight
 {
-    public function __construct(protected float $kilograms)
-    {
-    }
+    public function __construct(protected float $kilograms) {}
 
     public static function kilograms(float $kilograms): self
     {
