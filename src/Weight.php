@@ -4,7 +4,9 @@ namespace Editmode\WeightConversions;
 
 class Weight
 {
-    public function __construct(protected float $kilograms) {}
+    public function __construct(protected float $kilograms)
+    {
+    }
 
     public static function kilograms(float $kilograms): self
     {
@@ -14,5 +16,10 @@ class Weight
     public function toPounds(): float
     {
         return $this->kilograms * 2.2046;
+    }
+
+    public function toStones()
+    {
+        return $this->kilograms * 0.15747;
     }
 }
